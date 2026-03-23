@@ -1,4 +1,4 @@
-# Virus Spread Simulation - Final Project
+# Virus Spread Simulation - CSC 203 Final Project
 
 ## Project Overview
 This project is a Java based virus simulation that models disease spread through a population. The simulation demonstrates how a certian disease spreads based on closeness, immunity, and indivdual characteristics.
