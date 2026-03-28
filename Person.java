@@ -4,7 +4,6 @@ import java.util.Random;
 /**
  * Base class representing a person in the virus simulation.
  * All people have health status and can move around the grid.
- * Similar to Critter class structure.
  */
 public abstract class Person {
     protected int health; // 0-100
@@ -22,7 +21,6 @@ public abstract class Person {
     
     /**
      * Gets the direction this person wants to move.
-     * @return the direction to move
      */
     public Direction getMove() {
         // Random movement by default
@@ -37,20 +35,16 @@ public abstract class Person {
     
     /**
      * Gets the string representation of this person.
-     * @return the display string
      */
     public abstract String toString();
     
     /**
      * Attempts to infect this person with a virus.
-     * @param infectionChance the probability of infection (0.0 to 1.0)
-     * @return true if infection was successful
      */
     public abstract boolean tryInfect(double infectionChance);
     
     /**
      * Called when a collision occurs with another person.
-     * @param other the other person's class name
      */
     public void collide(String other) {
         // Override in subclasses if needed
