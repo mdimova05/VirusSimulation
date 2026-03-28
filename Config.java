@@ -1,9 +1,6 @@
 /**
  * Configuration class containing all simulation parameters.
  * Modify these constants to adjust simulation behavior.
- * 
- * @author Virus Simulation Team
- * @version 1.0
  */
 public class Config {
     // Grid dimensions
@@ -14,7 +11,7 @@ public class Config {
     public static final int CELL_SIZE = 14;  // Slightly larger for visibility
     
     // Population settings
-    public static final int DEFAULT_PERSON_COUNT = 80;  // More people!
+    public static final int DEFAULT_PERSON_COUNT = 80;  // More people
     public static final int INITIAL_INFECTED = 8;  // Start with more sick people
     public static final int INITIAL_VACCINATED_COUNT = 30;
     
@@ -22,7 +19,7 @@ public class Config {
     public static final double BASE_INFECTION_RATE = 0.20; // 20% chance per contact
     public static final int INFECTION_DISTANCE = 1; // cells (must be adjacent)
     public static final int INCUBATION_PERIOD = 3; // ticks before showing symptoms
-    public static final int RECOVERY_TIME = 25; // ticks to recover (was 15 - too fast)
+    public static final int RECOVERY_TIME = 25; // ticks to recover
     public static final double DEATH_RATE = 0.015; // 1.5% chance of death per tick
     
     // Movement - all move at same speed for simplicity
