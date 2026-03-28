@@ -3,9 +3,6 @@ import java.awt.Color;
 /**
  * Represents a healthy, uninfected person.
  * Healthy people can be infected when exposed to virus.
- * 
- * @author Virus Simulation Team
- * @version 1.0
  */
 public class HealthyPerson extends Person {
     
