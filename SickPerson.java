@@ -3,9 +3,6 @@ import java.awt.Color;
 /**
  * Represents a person infected with the virus.
  * Sick people lose health over time and can infect others.
- * 
- * @author Virus Simulation Team
- * @version 1.0
  */
 public class SickPerson extends Person {
     protected int sicknessDuration;
@@ -81,7 +78,6 @@ public class SickPerson extends Person {
     
     /**
      * Checks if this person has recovered from the illness.
-     * @return true if recovery time has been reached and person is alive
      */
     public boolean hasRecovered() {
         return alive && sicknessDuration >= recoveryTime;
@@ -89,7 +85,6 @@ public class SickPerson extends Person {
     
     /**
      * Gets the infection rate multiplier for this sick person.
-     * @return the multiplier (1.0 for normal sick person)
      */
     public double getInfectionMultiplier() {
         return 1.0;
