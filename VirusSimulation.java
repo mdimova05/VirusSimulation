@@ -6,9 +6,6 @@ import java.util.*;
 /**
  * Main GUI for the virus simulation.
  * Based on CritterGui structure but simplified.
- * 
- * @author Virus Simulation Team
- * @version 1.0
  */
 @SuppressWarnings("deprecation")
 public class VirusSimulation implements ActionListener {
