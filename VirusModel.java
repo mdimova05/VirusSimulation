@@ -25,8 +25,6 @@ public class VirusModel extends Observable {
     
     /**
      * Constructs a new virus simulation model.
-     * @param width grid width
-     * @param height grid height
      */
     public VirusModel(int width, int height) {
         this.width = width;
@@ -302,8 +300,6 @@ public class VirusModel extends Observable {
     
     /**
      * Moves a point in the given direction (with wrapping).
-     * @param p the point to move
-     * @param direction the direction to move
      */
     private Point movePoint(Point p, Direction direction) {
         if (direction == Direction.NORTH) {
