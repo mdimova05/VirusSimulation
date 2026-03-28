@@ -5,9 +5,6 @@ import java.util.*;
 /**
  * Panel for displaying the virus simulation grid.
  * Based on CritterPanel structure.
- * 
- * @author Virus Simulation Team
- * @version 1.0
  */
 public class VirusPanel extends JPanel implements Observer {
     private static final long serialVersionUID = 1L;
@@ -19,7 +16,6 @@ public class VirusPanel extends JPanel implements Observer {
     
     /**
      * Constructs a panel to display the given model.
-     * @param model the simulation model
      */
     public VirusPanel(VirusModel model) {
         this.model = model;
