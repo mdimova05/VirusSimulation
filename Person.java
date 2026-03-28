@@ -5,9 +5,6 @@ import java.util.Random;
  * Base class representing a person in the virus simulation.
  * All people have health status and can move around the grid.
  * Similar to Critter class structure.
- * 
- * @author Virus Simulation Team
- * @version 1.0
  */
 public abstract class Person {
     protected int health; // 0-100
