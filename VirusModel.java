@@ -2,13 +2,7 @@ import java.awt.Color;
 import java.awt.Point;
 import java.util.*;
 
-/**
- * The model managing the virus simulation grid and disease spread.
- * Based on CritterModel structure but adapted for virus simulation.
- * 
- * @author Virus Simulation Team
- * @version 1.0
- */
+
 public class VirusModel extends Observable {
     // Constants
     public static final String EMPTY = " ";
@@ -240,9 +234,9 @@ public class VirusModel extends Observable {
         }
     }
     
-    /**
-     * Replaces a sick person with a recovered one.
-     */
+    
+    // Replaces a sick person with a recovered one.
+
     private void replaceWithRecovered(Person person) {
         Point location = locationMap.get(person);
         if (location == null) return;
@@ -267,9 +261,7 @@ public class VirusModel extends Observable {
         classStateMap.get(recoveredClassName).count++;
     }
     
-    /**
-     * Resets the simulation.
-     */
+    //Resets simulation
     public void reset() {
         // Clear all data structures
         for (int x = 0; x < width; x++) {
@@ -291,9 +283,9 @@ public class VirusModel extends Observable {
         notifyObservers();
     }
     
-    /**
-     * Updates the display arrays.
-     */
+
+    //Updates the display arrays. 
+    
     private void updateDisplay() {
         for (int x = 0; x < width; x++) {
             for (int y = 0; y < height; y++) {
@@ -323,7 +315,7 @@ public class VirusModel extends Observable {
         } else if (direction == Direction.WEST) {
             p.x = (p.x - 1 + width) % width;
         }
-        // CENTER: Stay in place
+        // Stay in place
         return p;
     }
     
@@ -339,7 +331,7 @@ public class VirusModel extends Observable {
         return p;
     }
     
-    // Getters
+    //Getters
     public int getWidth() { return width; }
     public int getHeight() { return height; }
     public int getMoveCount() { return moveCount; }
