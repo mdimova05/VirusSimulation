@@ -3,9 +3,6 @@ import java.awt.Color;
 /**
  * Represents a super spreader - a sick person who spreads the virus more easily.
  * Super spreaders have a higher infection rate when interacting with others.
- * 
- * @author Virus Simulation Team
- * @version 1.0
  */
 public class SuperSpreader extends SickPerson {
     private int superSpreaderMultiplier = 2.5;
@@ -28,7 +25,6 @@ public class SuperSpreader extends SickPerson {
     
     /**
      * Gets the infection rate multiplier for super spreader.
-     * @return the multiplier
      */
     @Override
     public double getInfectionMultiplier() {
