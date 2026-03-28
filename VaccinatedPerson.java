@@ -3,9 +3,6 @@ import java.awt.Color;
 /**
  * Represents a vaccinated person.
  * Vaccinated people have high immunity and are resistant to infection.
- * 
- * @author Virus Simulation Team
- * @version 1.0
  */
 public class VaccinatedPerson extends HealthyPerson {
     private double vaccineImmunity;
@@ -38,7 +35,6 @@ public class VaccinatedPerson extends HealthyPerson {
     
     /**
      * Gets the immunity level from vaccination.
-     * @return immunity as a percentage (0.0 to 1.0)
      */
     public double getImmunity() {
         return vaccineImmunity;
@@ -46,7 +42,6 @@ public class VaccinatedPerson extends HealthyPerson {
     
     /**
      * Attempts to dodge virus exposure through immunity.
-     * @return true if successfully dodged
      */
     public boolean dodgeVirus() {
         return random.nextDouble() < vaccineImmunity;
