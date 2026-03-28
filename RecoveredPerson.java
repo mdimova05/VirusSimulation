@@ -3,9 +3,6 @@ import java.awt.Color;
 /**
  * Represents a person who has recovered from the virus.
  * Recovered people have natural immunity.
- * 
- * @author Virus Simulation Team
- * @version 1.0
  */
 public class RecoveredPerson extends Person {
     private double immunityLevel = 0.90;
@@ -38,7 +35,6 @@ public class RecoveredPerson extends Person {
     
     /**
      * Gets the immunity level of this person.
-     * @return immunity as a percentage (0.0 to 1.0)
      */
     public double getImmunity() {
         return immunityLevel;
